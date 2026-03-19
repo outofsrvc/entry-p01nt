@@ -23,7 +23,7 @@
 5. Typical Attack Flow: تحليل مسار الهجوم المعتاد وفهم عقلية المهاجم.
 6. Basic Recon: مهارات الاستطلاع الأولي وجمع المعلومات عن الملفات.
 
-### 🔴 المرحلة الثالثة: الترسانة والتطبيق (Tooling & Practice)
+### 🔴 المرحلة الثالثة: الأدوات والتطبيق (Tooling & Practice)
 7. RE Toolkit: إعداد بيئة العمل والأدوات (Ghidra, x64dbg, IDA).
 8. Challenges (Practical Labs):
     * 🔍 Static Analysis: تحليل الكود دون تشغيله.
@@ -33,7 +33,7 @@
 
 ---
 
-## 🛠️ الأدوات المستخدمة (The Arsenal)
+## 🛠️ الأدوات المستخدمة (The Toolkit)
 
 نعتمد في هذه الورشة على الأدوات القياسية التي يستخدمها المحترفون:
 * Disassemblers: Ghidra, IDA Pro.
