@@ -1,43 +1,64 @@
-# Chirpy Starter
+# Entry P01NT 🚩
+> ورشة عمل تطبيقية في الهندسة العكسية.
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Status: Active](https://img.shields.io/badge/Status-In--Progress-success)]()
+[![Theme: Chirpy](https://img.shields.io/badge/Theme-Chirpy-orange)](https://github.com/cotes2020/jekyll-theme-chirpy)
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+مرحباً بك في Entry P01NT، هذه الورشة مصممة لتكون نقطة دخول (Entry Point) لكل من يرغب في استكشاف عالم الهندسة العكسية وتحليل البرمجيات الخبيثة. قمت بتصميم هذه الورشة لتقليل الفجوة بين المعرفة النظرية والتطبيق العملي (Learning by Doing).
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+---
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+## 🗺️ منهج الورشة (Curriculum)
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+تم تقسيم الورشة إلى مراحل تدريجية تغطي الأساسيات وصولاً إلى التحديات العملية:
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+### 🟢 المرحلة الأولى: التأسيس (Foundations)
+1. Introduction to Reverse Engineering: مدخل لعالم الهندسة العكسية وأهميتها.
+2. Fundamentals of RE: مراجع لدراسة اساسيات الهندسة العكسية.
+3. Windows Architecture: فهم معمارية نظام ويندوز وكيفية تعامله مع البرامج.
 
-## Usage
+### 🟡 المرحلة الثانية: التحليل العميق (Deep Dive)
+4. Recognizing C code constructs in Asm: كيف تترجم الأكواد البرمجية إلى لغة الآلة (Global vs Local Variables, Arithmetic Operations, Loops, If-statements, Function Call Conventions, switch Statements, Arrays, Structs, Linked List).
+5. Typical Attack Flow: تحليل مسار الهجوم المعتاد وفهم عقلية المهاجم.
+6. Basic Recon: مهارات الاستطلاع الأولي وجمع المعلومات عن الملفات.
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+### 🔴 المرحلة الثالثة: الترسانة والتطبيق (Tooling & Practice)
+7. RE Toolkit: إعداد بيئة العمل والأدوات (Ghidra, x64dbg, IDA).
+8. Challenges (Practical Labs):
+    * 🔍 Static Analysis: تحليل الكود دون تشغيله.
+    * ⚙️ Dynamic Analysis: مراقبة البرنامج أثناء التنفيذ.
+    * 🔐 XOR Encryption: فهم وفك تشفير البيانات البسيطة.
+9. after that: كيف تطور نفسك بالهندسة العكسية بعد الانتهاء من هذه الورشة.
 
-## Contributing
+---
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+## 🛠️ الأدوات المستخدمة (The Arsenal)
 
-## License
+نعتمد في هذه الورشة على الأدوات القياسية التي يستخدمها المحترفون:
+* Disassemblers: Ghidra, IDA Pro.
+* Debuggers: x64dbg.
+* Tools: DIE, PE-bear, Cff-Explorer, ProcMon, ProcEx.
 
-This work is published under [MIT][mit] License.
+---
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+## 🚀 كيف تبدأ؟
+
+يمكنك متابعة المقالات والدروس بشكل منظم وتفاعلي عبر الموقع الرسمي للورشة (المبني بثيمة Chirpy):
+
+🔗 [outofsrvc.github.io/entry-p01nt](https://outofsrvc.github.io/entry-p01nt/)
+
+---
+
+## 👤 الكاتب (The Author)
+
+* Username: outofsrvc (P01NT)
+* GitHub: [@outofsrvc](https://github.com/outofsrvc)
+* Twitter: [@outofsrvc](https://x.com/outofsrvc)
+* Field: Reverse Engineering & Malware Analysis
+
+---
+<p align="center">
+  <b>Entry P01NT</b> - <i>"The first step into the deep end."</i> <br>
+  تصميم بكل شغف بواسطة <b>P01NT</b> 💻✨
+</p>
