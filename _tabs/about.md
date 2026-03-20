@@ -5,6 +5,8 @@ order: 4
 title: عن الورشة
 ---
 
+<div dir="rtl" style="text-align: right;" markdown="1">
+
 ## 🚩 ما هي Entry P01NT؟
 Entry P01NT هي مبادرة تعليمية مفتوحة المصدر تهدف إلى تبسيط علم الهندسة العكسية (Reverse Engineering) وتحليل البرمجيات الخبيثة باللغة العربية. 
 
@@ -18,10 +20,14 @@ Entry P01NT هي مبادرة تعليمية مفتوحة المصدر تهدف 
 ---
 
 ## 👤 عن الكاتب
-مرحباً، أنا P01NT (@outofsrvc).
+مرحباً، أنا P01NT ([@outofsrvc](https://github.com/outofsrvc)).
 مهتم بمجال الأمن السيبراني، وتحديداً في تحليل البرمجيات الخبيثة والهندسة العكسية. قمت ببناء هذه الورشة كخلاصة لرحلتي في التعلم، لتكون المرجع الذي تمنيت وجوده عندما بدأت.
 
 > للتواصل أو المساهمة:
-> المستودع مفتوح للجميع على [GitHub](https://github.com/outofsrvc/entry-p01nt). يسعدني استقبال مقترحاتكم  وتصحيحاتكم!
+> المستودع مفتوح للجميع على [GitHub](https://github.com/outofsrvc/entry-p01nt). يسعدني استقبال مقترحاتكم وتصحيحاتكم!
 
+<div dir="ltr" style="text-align: center;">
 *“If you can't build it, you don't own it. If you can't break it, you don't understand it.”*
+</div>
+
+</div>
