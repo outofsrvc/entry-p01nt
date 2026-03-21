@@ -35,39 +35,46 @@ tags: [windows, pe-format, memory, architecture, os-concepts]
 #### 1. رأس الدوس (Dos Header)
 هو أول 64 بايت من الملف وبيحتوي على المعلومات اللازمة لمعرفة أن هذا الملف بتنسيق PE: 
 * e_magic: الرقم السحري "magic number" الذي يشير إلى الحرفين MZ أو 4d 5a بالهيكس.. نسبة للمهندس "Mark Zbinowski" وهما اللذان يحددان أن الملف بتنسيق PE.
+
 ![DOS Header Magic Number](/assets/img/posts/windows/dos-magic.png)
 _شكل (1): الرقم السحري._
 
 * e_lfanew: يقع عند الإزاحة 0x3c جوا الـ DOS Header وهو عبارة عن عنوان يشير إلى مكان بدأ PE Header (الـ NT Header الجديد).
+
 ![e_lfanew Offset](/assets/img/posts/windows/e-lfanew.png)
 
 #### 2. بقايا الدوس (DOS Stub)
 عبارة عن بقايا للـ DOS Header يأتي بعد الـ 64 بايت الأولى لرأس الـ DOS وهو منطقة ذاكرة تكون غالباً مليئة بالأصفار أو تحتوي على رسالة خطأ بسيطة تشير إلى أن هذا البرنامج لا يمكن تشغيله في وضع DOS (إلي كانت معماريته 16-bit على ما أذكر كان بنظام windows98).
+
 ![DOS Stub Message](/assets/img/posts/windows/dos-stub.png)
 _شكل (2): صورة توضح شكل الـ DOS Stub._
 
 #### 3. رأس النظام (NT Header / PE Header)
 يتم تعريفه برمجياً كـ بنية IMAGE_NT_HEADER.
+
 ![IMAGE_NT_HEADER Structure](/assets/img/posts/windows/img-nt-header.png)
 _شكل (3): صورة توضح برمجة البنية._
 
 ويتكون من ثلاثة أجزاء:
 1. التوقيع (signature): يتكون من البايتات السحرية PE\0\0 أو بالهيكس 50 45 00 00 للتعريف بتنسيق الملف.
+
 ![IMAGE_NT_HEADER Signature](/assets/img/posts/windows/nt-header-sign.png)
 _شكل (4): صورة توضح التوقيع._
 
 
-2. رأس الملف (File Header أو COFF Header): يصف الخصائص الأساسية للملف مثل: 
+1. رأس الملف (File Header أو COFF Header): يصف الخصائص الأساسية للملف مثل: 
    * Machine: نوع المعالج.
    * NumberOfSections: عدد الأقسام الموجودة في الملف.
    * Characteristics: سمات الملف (مثل هل هو Exe أو DLL).
+
 ![File Header](/assets/img/posts/windows/file-header.png)
 _شكل (5): صورة توضح رأس الملف._
 
-3. الرأس الاختياري (Optional Header): على الرغم من تسميته إلا أنه إلزامي لملفات PE ويحتوي على متغيرات بالغة الأهمية: 
+1. الرأس الاختياري (Optional Header): على الرغم من تسميته إلا أنه إلزامي لملفات PE ويحتوي على متغيرات بالغة الأهمية: 
    * AddressOfEntryPoint: نقطة دخول البرنامج.
    * ImageBase: العنوان المفضل لتحميل الملف في الذاكرة.
    * DataDirectory: قائمة مكونة من 16 عنصر بتشير إلى جداول هامة مثل جدول التصدير "export table" والاستيراد "import table".
+
 ![Optional Header](/assets/img/posts/windows/optional-header.png)
 _شكل (6): صورة توضح الرأس الاختياري._
 
@@ -91,6 +98,7 @@ _شكل (6): صورة توضح الرأس الاختياري._
   * .edata: ويكون للـ exports directory وهذا قسم مهم في ملفات dll لربط Functions المصدر بأسماء أو أرقام تعريفية.
 * .data: بيحتوي على البيانات والمتغيرات التي تم تهيئتها.
 * .rsrc: بيحتوي على الموارد كالصور والأيقونات الخاصة بالبرنامج. 
+
 ![Sections View](/assets/img/posts/windows/sections-table.png)
 _شكل (7): صورة توضح الأقسام._
 
@@ -119,10 +127,12 @@ _شكل (7): صورة توضح الأقسام._
 - exe name: اسم ملف التنفيذ المرتبطة فيه هي العملية.
 - dll files: ملفات الـ dll المرتبطين بهي العملية.
 - PCB: ستراكشر الـكيرنال المرتبط بهي العملية.
+
 ![EProcess](/assets/img/posts/windows/eprocess.png)
 _شكل (8): صورة توضح ارتباط العمليات ببعضهم البعض._
 
 هدول الـ EProcesses موجودين بالـ kernel memory على شكل double-linked يعني كل بروسيس الها forward link و back link. وطبعاً في كتير برامج بتوصل لهي الـ EProcess متل Process Explorer.
+
 ![Process Explorer View](/assets/img/posts/windows/process-explorer.png)
 _شكل (9): صورة توضح عرض من داخل البرنامج._
 
@@ -134,11 +144,13 @@ _شكل (9): صورة توضح عرض من داخل البرنامج._
 - Running: يعني شغالة أو قيد التنفيذ.
 - Ready: جاهزة منتظرة البروسيسور ليشغلها.
 - Blocked/Suspended: توقفت أو انحظرت خلينا نقول جراء مقاطعة (interrupt).
+
 ![Threads Memory Status](/assets/img/posts/windows/threads-status.png)
 _شكل (10): صورة توضح حالات الخيوط._
 
 بما أن البروسيس ممكن تحتوي على أكتر من thread. هل بيكونوا معزولين عن بعض؟
 لا هني بيعملوا shared للميموري يعني الـ threads بيتشاركوا الـ resources والـ address spaces (متل .data section و .code section). بس بيضل لكل thread الها stack و registers خاصين فيها.
+
 ![Threads Memory Sharing](/assets/img/posts/windows/thread-memory.png)
 _شكل (11): صورة توضح مشاركة الذاكرة بين الخيوط._
 
@@ -219,6 +231,7 @@ windows data types:
 1. low-level API:
 هاد بيتعامل مع الـ sockets اسمه winsock. الـ socket عبارة عن handle بالـ endpoint للـ network communications.
 *مثال:* في لعبة الأكواب الي بيتواصلوا فيها:
+
 ![Sockets Analogy](/assets/img/posts/windows/socket-analogy.png)
 _شكل (13): صورة توضح مبدأ المرسل والمستقبل._
 
