@@ -19,7 +19,7 @@
 3. Windows Architecture: فهم معمارية نظام ويندوز وكيفية تعامله مع البرامج.
 
 ### 🟡 المرحلة الثانية: التحليل العميق (Deep Dive)
-4. Recognizing C code constructs in Asm: كيف تترجم الأكواد البرمجية إلى لغة الآلة (Global vs Local Variables, Arithmetic Operations, Loops, If-statements, Function Call Conventions, switch Statements, Arrays, Structs, Linked List).
+4. Recognizing C code constructs in Asm: كيف تترجم الأكواد البرمجية إلى لغة الآلة (Global vs Local Variables, Loops, If-statements, switch Statements, Arrays, Structs, Linked List).
 5. Typical Attack Flow: تحليل مسار الهجوم المعتاد وفهم عقلية المهاجم.
 6. Basic Recon: مهارات الاستطلاع الأولي وجمع المعلومات عن الملفات.
 

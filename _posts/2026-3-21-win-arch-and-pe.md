@@ -1,5 +1,6 @@
 ---
 title: "03. Windows Architecture & PE Format"
+author: outofsrvc
 date: 2026-03-21 10:00:00 +0300
 categories: [Foundations, OS Internals]
 tags: [windows, pe-format, memory, architecture, os-concepts]
@@ -133,8 +134,11 @@ _شكل (8): صورة توضح ارتباط العمليات ببعضهم الب
 
 هدول الـ EProcesses موجودين بالـ kernel memory على شكل double-linked يعني كل بروسيس الها forward link و back link. وطبعاً في كتير برامج بتوصل لهي الـ EProcess متل Process Explorer.
 
+<div dir="ltr" style="text-align: center;">
+
 ![Process Explorer View](/assets/img/posts/windows/process-explorer.png)
 _شكل (9): صورة توضح عرض من داخل البرنامج._
+</div>
 
 ### 2. الخيوط (Threads)
 باختصار هي الشي الي ويندوز بيقوم بتنفيذو. أما بالنسبة للـ Process: هي بتحتوي بداخلها threads.
@@ -151,8 +155,11 @@ _شكل (10): صورة توضح حالات الخيوط._
 بما أن البروسيس ممكن تحتوي على أكتر من thread. هل بيكونوا معزولين عن بعض؟
 لا هني بيعملوا shared للميموري يعني الـ threads بيتشاركوا الـ resources والـ address spaces (متل .data section و .code section). بس بيضل لكل thread الها stack و registers خاصين فيها.
 
+<div dir="ltr" style="text-align: center;">
+
 ![Threads Memory Sharing](/assets/img/posts/windows/thread-memory.png)
 _شكل (11): صورة توضح مشاركة الذاكرة بين الخيوط._
+</div>
 
 ### 3. الذاكرة الافتراضية (virtual memory / virtual address space)
 أي exe.file رح نشغلو رح يكون اله بروسيس وهي البروسيس الها address space خاص فيها.
@@ -232,8 +239,11 @@ windows data types:
 هاد بيتعامل مع الـ sockets اسمه winsock. الـ socket عبارة عن handle بالـ endpoint للـ network communications.
 *مثال:* في لعبة الأكواب الي بيتواصلوا فيها:
 
+<div dir="ltr" style="text-align: center;">
+
 ![Sockets Analogy](/assets/img/posts/windows/socket-analogy.png)
 _شكل (13): صورة توضح مبدأ المرسل والمستقبل._
+</div>
 
 كل كوب هو عبارة عن سوكيت؛ كوب للسماع وكوب للكلام. فالسوكيت منعاملها كـ file: منقدر نعمل فيه write or read.
 
