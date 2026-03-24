@@ -1,8 +1,7 @@
 ---
 title: "01. Introduction to Reverse Engineering"
-author: outofsrvc
 date: 2026-3-19 10:00:00 +0300
-catagories: [Foundations, Intro]
+categories: [Foundations, Intro]
 tags: [reverse-engineering, malware-analysis, basics]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "06. Basic Reconnaissance"
-author: outofsrvc
-date: 2026-03-23 12:00:00 +0300
+date: 2026-03-24 12:00:00 +0300
 categories: [deep-dive, malware-analysis]
 tags: [static-analysis, dynamic-analysis, tools, reconnaissance, network-analysis]
 ---

@@ -1,8 +1,7 @@
 ---
 title: "05. Cyber Attack Lifecycle"
-author: outofsrvc
-date: 2026-3-22 10:00:00 +0300
-catagories: [deep-dive, malware-analysis]
+date: 2026-3-23 11:00:00 +0300
+categories: [deep-dive, malware-analysis]
 tags: [reverse-engineering, malware-analysis, malware-reverse-engineerig]
 ---
 

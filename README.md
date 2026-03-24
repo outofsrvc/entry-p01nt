@@ -20,11 +20,11 @@
 
 ### 🟡 المرحلة الثانية: التحليل العميق (Deep Dive)
 4. Recognizing C code constructs in Asm: كيف تترجم الأكواد البرمجية إلى لغة الآلة (Global vs Local Variables, Loops, If-statements, switch Statements, Arrays, Structs, Linked List).
-5. Typical Attack Flow: تحليل مسار الهجوم المعتاد وفهم عقلية المهاجم.
+5. Cyber Attack Lifecycle: تحليل مسار الهجوم المعتاد وفهم عقلية المهاجم.
 6. Basic Recon: مهارات الاستطلاع الأولي وجمع المعلومات عن الملفات.
-
-### 🔴 المرحلة الثالثة: الأدوات والتطبيق (Tooling & Practice)
 7. RE Toolkit: إعداد بيئة العمل والأدوات (Ghidra, x64dbg, IDA).
+
+### 🔴 المرحلة الثالثة: التطبيق العملي (Practice)
 8. Challenges (Practical Labs):
     * 🔍 Static Analysis: تحليل الكود دون تشغيله.
     * ⚙️ Dynamic Analysis: مراقبة البرنامج أثناء التنفيذ.
@@ -38,7 +38,7 @@
 نعتمد في هذه الورشة على الأدوات القياسية التي يستخدمها المحترفون:
 * Disassemblers: Ghidra, IDA Pro.
 * Debuggers: x64dbg.
-* Tools: DIE, PE-bear, Cff-Explorer, ProcMon, ProcEx.
+* Tools: DIE, PE-bear, ProcMon, ProcEx, FakeNet-NG, Wireshark.
 
 ---
 
@@ -60,5 +60,5 @@
 ---
 <p align="center">
   <b>Entry P01NT</b> - <i>"The first step into the deep end."</i> <br>
-  تصميم بكل شغف بواسطة <b>P01NT</b> 💻✨
+ تم التصميم بكل شغف بواسطة <b>P01NT</b> 💻✨
 </p>

@@ -1,6 +1,5 @@
 ---
 title: "03. Windows Architecture & PE Format"
-author: outofsrvc
 date: 2026-03-21 10:00:00 +0300
 categories: [Foundations, OS Internals]
 tags: [windows, pe-format, memory, architecture, os-concepts]
