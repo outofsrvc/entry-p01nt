@@ -1,5 +1,5 @@
 ---
-title: "02. Fundamentals of Reverse Engineering"
+title: "0x2. Fundamentals of Reverse Engineering"
 date: 2026-3-17 10:00:00 +0300
 categories: [Foundations, Basics]
 tags: [c-lang, x86-assembly, computer-architecture, os-concepts, networking]
