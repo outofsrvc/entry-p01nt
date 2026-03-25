@@ -1,6 +1,6 @@
 ---
 title: "01. Introduction to Reverse Engineering"
-date: 2026-3-19 10:00:00 +0300
+date: 2026-3-16 10:00:00 +0300
 categories: [Foundations, Intro]
 tags: [reverse-engineering, malware-analysis, basics]
 ---

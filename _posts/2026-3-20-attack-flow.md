@@ -1,6 +1,6 @@
 ---
 title: "05. Cyber Attack Lifecycle"
-date: 2026-3-23 11:00:00 +0300
+date: 2026-3-20 11:00:00 +0300
 categories: [deep-dive, malware-analysis]
 tags: [reverse-engineering, malware-analysis, malware-reverse-engineerig]
 ---

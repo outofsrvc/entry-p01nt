@@ -1,6 +1,6 @@
 ---
 title: "03. Windows Architecture & PE Format"
-date: 2026-03-21 10:00:00 +0300
+date: 2026-03-18 10:00:00 +0300
 categories: [Foundations, OS Internals]
 tags: [windows, pe-format, memory, architecture, os-concepts]
 ---
