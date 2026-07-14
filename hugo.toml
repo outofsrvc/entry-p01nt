@@ -2,10 +2,11 @@ baseURL = "https://outofsrvc.github.io/entry-p01nt/"
 title = "Entry-P01NT"
 enableGitInfo = false
 defaultContentLanguage = "ar"
-defaultContentLanguageInSubdir = false
-# Rewrite root-absolute URLs (e.g. /assets/img/...) to be relative to each
-# page so they resolve correctly under the GitHub Pages project subpath.
-relativeURLs = true
+defaultContentLanguageInSubdir = true
+# We do NOT use relativeURLs: with a GitHub Pages project subpath the
+# multilingual setup needs the per-language baseURL values below so that
+# non-default-language (English) URLs stay under the /entry-p01nt/ subpath
+# (Hugo would otherwise place the language code before the subpath).
 theme = "PaperMod"
 
 # Pagination
@@ -57,27 +58,27 @@ home = ["HTML", "RSS", "JSON"]
   [[languages.ar.menu.main]]
     identifier = "home"
     name = "الرئيسية"
-    url = "/"
+    url = ""
     weight = 1
   [[languages.ar.menu.main]]
     identifier = "posts"
     name = "المقالات"
-    url = "/posts/"
+    url = "posts/"
     weight = 10
   [[languages.ar.menu.main]]
     identifier = "about"
     name = "من نحن"
-    url = "/about/"
+    url = "about/"
     weight = 20
   [[languages.ar.menu.main]]
     identifier = "categories"
     name = "التصنيفات"
-    url = "/categories/"
+    url = "categories/"
     weight = 30
   [[languages.ar.menu.main]]
     identifier = "tags"
     name = "الوسوم"
-    url = "/tags/"
+    url = "tags/"
     weight = 40
 
 # ---------- English (served under /en/) ----------
@@ -91,25 +92,25 @@ home = ["HTML", "RSS", "JSON"]
   [[languages.en.menu.main]]
     identifier = "home"
     name = "Home"
-    url = "/"
+    url = ""
     weight = 1
   [[languages.en.menu.main]]
     identifier = "posts"
     name = "Posts"
-    url = "/posts/"
+    url = "posts/"
     weight = 10
   [[languages.en.menu.main]]
     identifier = "about"
     name = "About"
-    url = "/about/"
+    url = "about/"
     weight = 20
   [[languages.en.menu.main]]
     identifier = "categories"
     name = "Categories"
-    url = "/categories/"
+    url = "categories/"
     weight = 30
   [[languages.en.menu.main]]
     identifier = "tags"
     name = "Tags"
-    url = "/tags/"
+    url = "tags/"
     weight = 40
