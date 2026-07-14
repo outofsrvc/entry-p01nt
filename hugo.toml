@@ -1,0 +1,112 @@
+baseURL = "https://outofsrvc.github.io/entry-p01nt/"
+title = "Entry-P01NT"
+enableGitInfo = false
+defaultContentLanguage = "ar"
+defaultContentLanguageInSubdir = false
+theme = "PaperMod"
+
+# Pagination
+[pagination]
+pagerSize = 10
+
+# Allow raw HTML in content (e.g. <div dir="ltr"> quotation blocks)
+[markup.goldmark.renderer]
+unsafe = true
+
+# PaperMod client-side search index (Fuse.js)
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+  description = "Entry-P01NT — مدونة بحثية حول الهندسة العكسية وتحليل البرمجيات الخبيثة."
+  author = "P01NT"
+  avatar = "/assets/img/avatar.jpg"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  social = [
+    "https://twitter.com/outofsrvc",
+    "https://github.com/outofsrvc",
+  ]
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    minMatchCharLength = 2
+    threshold = 0.4
+    ignoreLocation = true
+    useExtendedSearch = false
+    keys = ["title", "permalink", "summary", "content"]
+    location = 0
+    distance = 100
+
+# ---------- Arabic (default, served at site root) ----------
+[languages.ar]
+  languageName = "العربية"
+  weight = 1
+  languageDirection = "rtl"
+  contentDir = "content"
+  [languages.ar.params]
+    description = "Entry-P01NT — مدونة بحثية حول الهندسة العكسية وتحليل البرمجيات الخبيثة."
+  [[languages.ar.menu.main]]
+    identifier = "home"
+    name = "الرئيسية"
+    url = "/"
+    weight = 1
+  [[languages.ar.menu.main]]
+    identifier = "posts"
+    name = "المقالات"
+    url = "/posts/"
+    weight = 10
+  [[languages.ar.menu.main]]
+    identifier = "about"
+    name = "من نحن"
+    url = "/about/"
+    weight = 20
+  [[languages.ar.menu.main]]
+    identifier = "categories"
+    name = "التصنيفات"
+    url = "/categories/"
+    weight = 30
+  [[languages.ar.menu.main]]
+    identifier = "tags"
+    name = "الوسوم"
+    url = "/tags/"
+    weight = 40
+
+# ---------- English (served under /en/) ----------
+[languages.en]
+  languageName = "English"
+  weight = 2
+  languageDirection = "ltr"
+  contentDir = "content"
+  [languages.en.params]
+    description = "Entry-P01NT — a research blog on reverse engineering and malware analysis."
+  [[languages.en.menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/en/"
+    weight = 1
+  [[languages.en.menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/en/posts/"
+    weight = 10
+  [[languages.en.menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/en/about/"
+    weight = 20
+  [[languages.en.menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/en/categories/"
+    weight = 30
+  [[languages.en.menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/en/tags/"
+    weight = 40
