@@ -3,6 +3,9 @@ title = "Entry-P01NT"
 enableGitInfo = false
 defaultContentLanguage = "ar"
 defaultContentLanguageInSubdir = false
+# Rewrite root-absolute URLs (e.g. /assets/img/...) to be relative to each
+# page so they resolve correctly under the GitHub Pages project subpath.
+relativeURLs = true
 theme = "PaperMod"
 
 # Pagination
