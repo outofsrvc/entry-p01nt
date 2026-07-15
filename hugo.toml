@@ -59,7 +59,7 @@ home = ["HTML", "RSS", "JSON"]
     imageUrl = "/assets/img/avatar.jpg"
     imageTitle = "p01nt"
     title = "P01NT"
-    subtitle = "Reverse Engineer & Malware Developer"
+    subtitle = "Reverse Engineer & Low-level Developer"
 
 # ---------- Arabic (default, served at site root) ----------
 [languages.ar]
@@ -81,7 +81,7 @@ home = ["HTML", "RSS", "JSON"]
     weight = 10
   [[languages.ar.menu.main]]
     identifier = "about"
-    name = "من نحن"
+    name = "عن الورشة"
     url = "about/"
     weight = 20
   [[languages.ar.menu.main]]
