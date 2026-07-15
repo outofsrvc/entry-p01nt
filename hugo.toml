@@ -33,9 +33,14 @@ home = ["HTML", "RSS", "JSON"]
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   social = [
-    "https://twitter.com/REPLACE_TWITTER",
-    "https://github.com/REPLACE_GITHUB",
-    "https://t.me/REPLACE_TELEGRAM",
+    "https://twitter.com/outofsrvc",
+    "https://github.com/outofsrvc",
+    "https://t.me/outofsrvce",
+  ]
+  socialIcons = [
+    { name = "x", url = "https://twitter.com/outofsrvc", title = "X (Twitter)" },
+    { name = "github", url = "https://github.com/outofsrvc", title = "GitHub" },
+    { name = "telegram", url = "https://t.me/outofsrvce", title = "Telegram" },
   ]
   [params.fuseOpts]
     isCaseSensitive = false
@@ -47,6 +52,14 @@ home = ["HTML", "RSS", "JSON"]
     keys = ["title", "permalink", "summary", "content"]
     location = 0
     distance = 100
+
+  # Profile-mode home page (centered card, no post list)
+  [params.profileMode]
+    enabled = true
+    imageUrl = "/assets/img/avatar.jpg"
+    imageTitle = "p01nt"
+    title = "P01NT"
+    subtitle = "Reverse Engineer & Malware Developer"
 
 # ---------- Arabic (default, served at site root) ----------
 [languages.ar]
