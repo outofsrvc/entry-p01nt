@@ -10,7 +10,7 @@ translationKey: "win-arch-and-pe"
 
 
 
-In the name of God, the Most Gracious, the Most Merciful.
+Bismillah
 
 Have you ever wondered how programs operate within systems? Or has the following thought occurred to you: what is the difference between an ordinary user and a developer in terms of their understanding of the systems they interact with?
 

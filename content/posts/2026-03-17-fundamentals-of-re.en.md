@@ -10,7 +10,7 @@ translationKey: "fundamentals-of-re"
 
 
 
-In the name of God, the Most Gracious, the Most Merciful.
+Bismillah
 
 In this article we will review the foundational disciplines that must be learned before embarking on the field of reverse engineering. We have distilled this knowledge from several international references and formulated it into Arabic explanations and series that we published on the "Arabic Shell Network" (Shabakat Shill al-Arabiya), and we append them here along with the original references at the end of each section.
 

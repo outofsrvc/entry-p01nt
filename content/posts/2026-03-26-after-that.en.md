@@ -10,7 +10,7 @@ translationKey: "after-that"
 
 
 
-In the name of Allah, and peace and blessings upon the Messenger of Allah, and upon his family and companions and those who follow him.
+Bismillah, and peace and blessings upon the Messenger of Allah, and upon his family and companions and those who follow him.
 
 Praise be to Allah, Lord of the worlds, by whose favor and guidance the **Entry P01NT** workshop has been completed. I ask Allah to record for you beneficial knowledge and righteous deeds through it, and that it be a good beginning for you.
 
