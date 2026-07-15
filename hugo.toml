@@ -33,8 +33,9 @@ home = ["HTML", "RSS", "JSON"]
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   social = [
-    "https://twitter.com/outofsrvc",
-    "https://github.com/outofsrvc",
+    "https://twitter.com/REPLACE_TWITTER",
+    "https://github.com/REPLACE_GITHUB",
+    "https://t.me/REPLACE_TELEGRAM",
   ]
   [params.fuseOpts]
     isCaseSensitive = false
