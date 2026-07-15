@@ -8,7 +8,7 @@ draft: false
 translationKey: "attack-flow"
 ---
 
-In the name of Allah, the Most Gracious, the Most Merciful.
+Bismillah
 
 When engaging with malicious software (malware) that warrants examination, one must understand the mindset of the adversary and the objectives they pursue. Therefore, in this research we examine the attack lifecycle and explain several fundamental concepts in malware development.
 

@@ -10,7 +10,7 @@ translationKey: "thinking-lab"
 
 
 
-In the name of Allah, the Most Gracious, the Most Merciful.
+Bismillah
 
 The reverse engineer does not perceive code merely as complex programming instructions, but rather as a "black box" with inputs and outputs. In this article, we discuss how the reverse engineer's mindset is built and how to infer the hidden programmatic logic.
 

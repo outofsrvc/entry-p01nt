@@ -8,7 +8,7 @@ draft: false
 translationKey: "basic-recon"
 ---
 
-In the name of Allah, the Most Gracious, the Most Merciful.
+Bismillah
 
 Whenever we intend to analyze any file, we follow the steps below, irrespective of whether the objective is to determine whether the file is benign or contains malware, or even whether we intend to crack its protection:
 
