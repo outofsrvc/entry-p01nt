@@ -3,7 +3,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Status: Active](https://img.shields.io/badge/Status-In--Progress-success)]()
-[![Theme: Chirpy](https://img.shields.io/badge/Theme-Chirpy-orange)](https://github.com/cotes2020/jekyll-theme-chirpy)
+[![Theme: PaperMod](https://img.shields.io/badge/Theme-PaperMod-blue)](https://github.com/adityatelange/hugo-PaperMod)
 
 مرحباً بك في Entry P01NT، هذه الورشة مصممة لتكون نقطة دخول (Entry Point) لكل من يرغب في استكشاف عالم الهندسة العكسية وتحليل البرمجيات الخبيثة. قمت بتصميم هذه الورشة لتقليل الفجوة بين المعرفة النظرية والتطبيق العملي (Learning by Doing).
 
@@ -45,7 +45,7 @@
 
 ## 🚀 كيف تبدأ؟
 
-يمكنك متابعة المقالات والدروس بشكل منظم وتفاعلي عبر الموقع الرسمي للورشة (المبني بثيمة Chirpy):
+يمكنك متابعة المقالات والدروس بشكل منظم وتفاعلي عبر الموقع الرسمي للورشة (المبني بثيمة PaperMod):
 
 🔗 [outofsrvc.github.io/entry-p01nt](https://outofsrvc.github.io/entry-p01nt/)
 
