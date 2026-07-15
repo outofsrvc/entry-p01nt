@@ -1,5 +1,5 @@
 ---
-title: "0x8. The Reverse Engieneer's Mindset"
+title: "0x8. The Reverse Engineer's Mindset"
 date: 2026-03-23T10:00:00+03:00
 categories: [practice, reverse-engineering]
 tags: [logic-of-re, patching, ascii]

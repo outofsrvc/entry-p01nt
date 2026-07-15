@@ -2,7 +2,7 @@
 title: "0x5. Cyber Attack Lifecycle"
 date: 2026-03-20T11:00:00+03:00
 categories: [deep-dive, malware-analysis]
-tags: [reverse-engineering, malware-analysis, malware-reverse-engineerig]
+tags: [reverse-engineering, malware-analysis, malware-reverse-engineering]
 toc: true
 draft: false
 translationKey: "attack-flow"
@@ -17,7 +17,7 @@ translationKey: "attack-flow"
 
 تقسم دورة الهجوم إلى ثلاث مراحل رئيسية:
 
-![Attack Lifcycle](/assets/img/posts/lifecycle/lifecycle.png)
+![Attack Lifecycle](/assets/img/posts/lifecycle/lifecycle.png)
 _شكل (1): توضيح دورة حياة الهجمات._
 
 
@@ -62,7 +62,7 @@ _شكل (1): توضيح دورة حياة الهجمات._
 عبارة عن دمج الملفات المضغوطة بواسطة Packer مع كود فك الضغط في ملف تنفيذي واحد. الفكرة هي أن الملف عندما يصل إلى جهاز الضحية، يكون فعلياً عبارة عن غلاف (Wrapper Program) وظيفته الأساسية فك ضغط الملف الخبيث الحقيقي وتنفيذه في الذاكرة لتجنب برامج الحماية.
 
 ![Compression](/assets/img/posts/lifecycle/compression.png)
-_شكل (2): توضيح كيف يتم ضفط وفك ضفط الملفات._
+_شكل (2): توضيح كيف يتم ضغط وفك ضغط الملفات._
 
 
 ### 2. التشويش (Obfuscation)
@@ -78,7 +78,7 @@ _شكل (3): كود يوضح كيف يتم التمويه._
 
 وهذا مثال توضيحي لكيفية تصميم كود مشوش بلغة C:
 
-![C obfucation](/assets/img/posts/lifecycle/c-obf.gif)
+![C obfuscation](/assets/img/posts/lifecycle/c-obf.gif)
 _شكل (4): توضيح كيف يتم التلاعب بالكود._
 
 

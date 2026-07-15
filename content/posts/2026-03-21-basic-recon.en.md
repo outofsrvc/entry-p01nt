@@ -92,4 +92,4 @@ In this article, we discuss the first two steps of the analysis process, known a
 - [Wireshark](https://www.wireshark.org/): A tool for capturing and analyzing network traffic (network sniffing) to determine whether the file is attempting to communicate with external command-and-control servers.
   
   ![WireShark](/assets/img/posts/basic-recon/wireshark.png)
-  _Figure (8): The Wireshark application interface._
+  _Figure (10): The Wireshark application interface._

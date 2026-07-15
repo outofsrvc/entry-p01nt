@@ -2,7 +2,7 @@
 title: "0x5. Cyber Attack Lifecycle"
 date: 2026-03-20T11:00:00+03:00
 categories: [deep-dive, malware-analysis]
-tags: [reverse-engineering, malware-analysis, malware-reverse-engineerig]
+tags: [reverse-engineering, malware-analysis, malware-reverse-engineering]
 toc: true
 draft: false
 translationKey: "attack-flow"
@@ -104,7 +104,7 @@ Common techniques:
 
 ### 5. Defense Evasion
 
-This refers to the staged introduction of malicious code and its assembly within the system over varying intervals in order to avoid arousing suspicion.
+This refers to techniques used to evade detection by security controls (such as antivirus and EDR) in order to arouse less suspicion.
 
 Common techniques:
 

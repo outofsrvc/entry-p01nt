@@ -1,6 +1,6 @@
 ---
 title: "0xB. After That"
-date: 2026-03-25T10:00:00+03:00
+date: 2026-03-26T10:00:00+03:00
 categories: [practice, reverse-engineering]
 tags: [just-in-time-learning]
 toc: true

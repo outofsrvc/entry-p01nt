@@ -10,6 +10,8 @@ translationKey: "introduction-to-re"
 
 
 
+Bismillah
+
 ## Introduction
 
 From childhood, human beings possess an innate curiosity to understand *"how things work?"*. It is this curiosity that drives a child to break apart a favorite toy in order to see the small motor inside it. In the advanced world of technology, this curiosity evolves into a precise and critical engineering discipline known as reverse engineering.
@@ -93,7 +95,7 @@ Here the arduous mental work begins, where the disassembled pieces are connected
 ![Hardware RE: mechanism analysis](/assets/img/posts/intro/hardware-re.jpg)
 _Figure (2): Analysis of the mechanical mechanism of hardware and solid components._
 
-* In software: attempting to trace the data path (Control Flow) through the code in order to reach the core "algorithm", such as locating the encryption algorithm.
+* In software: attempting to trace the execution path (Control Flow) through the code in order to reach the core "algorithm", such as locating the encryption algorithm.
 ![Software RE: Code analysis](/assets/img/posts/intro/software-re.jpg)
 _Figure (3): Analysis of code flow and programming logic._
 

@@ -107,4 +107,4 @@ _شكل (9): صورة للملف الذي يتم انشاءه بواسطة عم�
 * [Wireshark](https://www.wireshark.org/): أداة لالتقاط وتحليل حركة الشبكة (Network Sniffing) لمعرفة ما إذا كان الملف يحاول التواصل مع خوادم خارجية للتحكم والسيطرة.
   
 ![WireShark](/assets/img/posts/basic-recon/wireshark.png)
-_شكل (8): واجهة تطبيق WireShark._
+_شكل (10): واجهة تطبيق WireShark._

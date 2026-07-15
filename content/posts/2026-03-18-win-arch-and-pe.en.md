@@ -50,7 +50,7 @@ _Figure (1): The magic number._
 
 #### 2. DOS Stub
 
-It is a remnant of the DOS Header that comes after the first 64 bytes of the DOS Header; it is a memory region that is usually filled with zeros or contains a simple error message indicating that this program cannot run in DOS mode (which, as I recall, had a 16-bit architecture in the Windows 98 system).
+It is a remnant of the DOS Header that comes after the first 64 bytes of the DOS Header; it is a memory region that is usually filled with zeros or contains a simple error message indicating that this program cannot run in DOS mode (which had a 16-bit architecture in MS-DOS).
 
 ![DOS Stub Message](/assets/img/posts/windows/dos-stub.png)
 _Figure (2): An image illustrating the DOS Stub._
@@ -69,7 +69,7 @@ It consists of three parts:
 _Figure (4): An image illustrating the signature._
 
 
-1. File Header (or COFF Header): describes the basic properties of the file such as:
+2. File Header (or COFF Header): describes the basic properties of the file such as:
    * Machine: the processor type.
    * NumberOfSections: the number of sections present in the file.
    * Characteristics: the file attributes (such as whether it is an Exe or a DLL).
@@ -77,7 +77,7 @@ _Figure (4): An image illustrating the signature._
 ![File Header](/assets/img/posts/windows/file-header.png)
 _Figure (5): An image illustrating the file header._
 
-1. Optional Header: despite its name, it is mandatory for PE files and contains critically important variables:
+3. Optional Header: despite its name, it is mandatory for PE files and contains critically important variables:
    * AddressOfEntryPoint: the program's entry point.
    * ImageBase: the preferred address for loading the file into memory.
    * DataDirectory: a list of 16 elements pointing to important tables such as the export table and the import table.
@@ -182,7 +182,7 @@ The address space takes a range from `00000000` to `ffffffff` and this range is 
 _Figure (12): An image illustrating the comparison between the physical and virtual portions of memory._
 
 - The user mode range: from `00000000` to `7fffffff`
-- And kernel mode: from `7fffffff` to `ffffffff`
+- And kernel mode: from `80000000` to `ffffffff`
 *(Noting that this applies to the 32-bit system.)*
 
 ### 4. Virtual Address VS Physical Address
@@ -274,7 +274,7 @@ Of course, this library keeps pace with the standards specific to the protocols,
 ### 11. The Native API
 
 When we make a Call to a function from the win32api, that function does not directly perform what we requested. Rather, it needs to communicate with the kernel in order to reach the hardware.
-So the userapps use win32api from files such as `kernel.dll`, and these files make a Call to a file named `ntdll.dll`: it is responsible for the interactions between user mode and kernel mode.
+So the userapps use win32api from files such as `kernel32.dll`, and these files make a Call to a file named `ntdll.dll`: it is responsible for the interactions between user mode and kernel mode.
 
 The native api allows the apps to communicate directly with `ntdll.dll`.
 
